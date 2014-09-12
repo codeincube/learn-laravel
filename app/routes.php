@@ -20,4 +20,7 @@ Route::get('about', function()
 
 Route::resource('users', 'UserController');
 
+Route::get('test', function(){
+    echo Greeting::SayHello();
+});
 
